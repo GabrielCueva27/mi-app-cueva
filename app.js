@@ -37,7 +37,7 @@ app.get('/', (req, res) => {
 
           .card {
             width: 100%;
-            max-width: 720px;
+            max-width: 760px;
             background: #ffffff;
             color: #1f2937;
             border-radius: 18px;
@@ -70,10 +70,14 @@ app.get('/', (req, res) => {
 
           .info {
             margin-top: 25px;
-            padding: 18px;
+            padding: 20px;
             background: #f1f5f9;
             border-radius: 12px;
             text-align: left;
+          }
+
+          .info p {
+            margin: 8px 0;
           }
 
           .info strong {
@@ -90,24 +94,25 @@ app.get('/', (req, res) => {
 
       <body>
         <main class="card">
-          <div class="badge">Despliegue exitoso</div>
+          <div class="badge">Segundo despliegue exitoso</div>
 
-          <h1>Mi App CodeDeploy</h1>
+          <h1>Aplicación actualizada con AWS CodeDeploy</h1>
 
           <p>
-            Aplicación web desplegada correctamente con
+            La aplicación fue modificada y desplegada nuevamente desde GitHub usando
             <strong>AWS CodeDeploy</strong>.
           </p>
 
           <div class="info">
+            <p><strong>Estudiante:</strong> Gabriel Gustavo Cueva Romani</p>
             <p><strong>Proyecto:</strong> mi-app-cueva</p>
             <p><strong>Ubicación:</strong> San Ramón</p>
-            <p><strong>Versión:</strong> 1.0.0</p>
+            <p><strong>Versión:</strong> 2.0.0</p>
             <p><strong>Fecha de despliegue:</strong> ${fechaDespliegue}</p>
           </div>
 
           <footer>
-            Aplicación desarrollada con Node.js y Express.
+            Aplicación desarrollada con Node.js, Express y AWS CodeDeploy.
           </footer>
         </main>
       </body>
